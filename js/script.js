@@ -1,4 +1,4 @@
-dconst userFirstName= prompt("Inserisci il tuo nome");
+const userFirstName= prompt("Inserisci il tuo nome");
 const userLastName= prompt("Inserisci il cognome");
 const favColour= prompt("Inserisci il colore preferito") ;
 const numberRandom= Math.floor(Math.random() * 99);
@@ -9,6 +9,7 @@ const passwordGenerated = userFirstName + userLastName + favColour + numberRando
 
 document.getElementById("newPass").innerHTML=
 `
+  <div class="mds-pass border border-3 p-5">
   Nome: <strong>${userFirstName} ${userLastName}</strong><br>
   <br>
   Password: ${passwordGenerated}<br>
@@ -16,6 +17,7 @@ document.getElementById("newPass").innerHTML=
   <h3 class="text-danger pb-5">PLEASE KEEP YOUR PASSWORD SAFE</h3>
 
   Lunghezza password = ${passwordGenerated.length}
+  </div>
 `
 ;
 

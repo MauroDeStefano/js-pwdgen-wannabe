@@ -11,5 +11,9 @@ header h1 {
 
 mds-bg{
   height: 150px;
+}
+
+mds-pass{
   background-color: wheat;
+  font-size: larger;
 }
