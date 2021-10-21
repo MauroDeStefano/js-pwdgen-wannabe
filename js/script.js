@@ -1,10 +1,10 @@
 const userFirstName= prompt("Inserisci il tuo nome");
 const userLastName= prompt("Inserisci il cognome");
 const favColour= prompt("Inserisci il colore preferito") ;
-const numberRandom= Math.floor(Math.random() * 99);
+const randomNumber= Math.floor(Math.random() * 100 + 10);
 
 
-const passwordGenerated = userFirstName + userLastName + favColour + numberRandom;
+const passwordGenerated = userFirstName + userLastName + favColour + randomNumber;
 
 
 document.getElementById("newPass").innerHTML=
